@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<title>
+Registration page
+</title>
+
+<link rel="stylesheet" href="mystyle.css"/>
+<script src="validation.js">
+</script>
+
+<body>
+
+<div class="header">
+<h1><a class="head" href="Dashboard.html"> TouristCorp</a> </h1>
+</div>
+
+<form name="Form" id="Form" onsubmit="return ConfirmPassword()" action="register.php" method="post">
+<div class="form">
+<p> Fill out the forms below to create an account </p>
+
+<label for="fn"> First Name: </label> <br> 
+<input required type="text" placeholder="Enter your first name" name="fn" class="first" id="fn" pattern="[A-Za-z]+" title="Alphabatical letters only"><label class="valid" id="FirstName" ></label><br> <br>
+
+<label for="ln"> Last Name: </label> <br> 
+<input required type="text" placeholder="Enter your last name" name="ln" class="last" id="ln"><label class="valid" id="LastName" pattern="[A-Za-z]+" title="Alphabatical letters only"></label> <br> <br>
+
+<label for="email"> Email: </label> <br> 
+<input required type="email" placeholder="Enter your Email" name="email" class="email" id="email"><label class="valid" id="EmailAddress"></label> <br> <br>
+
+<label for="pass"> Password: </label> <br> 
+<input required type="password" placeholder="Choose a password" name="pass" class="pass" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Add at least one number and one
+uppercase and lowercase letter, and at least 8 or more characters"><label class="valid" id="Password"></label> <br> <br>
+
+<label for="cpass"> Confirm Password: </label> <br> 
+<input required type="password" placeholder="Enter the password again" name="cpass" class="cpass" id="confirm"><label class="valid" id="Confirm"></label> <br> <br>
+
+<button type="submit" value="Register" name="register"> Register </button>
+
+<p> Already have an account? <a href="Login.html">Click here</a> to login. </p>
+</div>
+</form>
+
+<div class="contact">
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For more information and support: </h3>
+<a>
+<table class="contact">
+<tr> <td> <img src="images/Whatsapp.png" alt="Whatsapp" height="40" align="center" </td> <td>  050 1111111 </td> </tr>
+<tr> <td> <img src="images/Twitter.png" alt="Twitter" height="35" align="center" </td> <td>   @TouristCorp </td> </tr>
+<tr> <td> <img src="images/Facebook.png" alt="Facebook" height="40" align="center" </td> <td> TouristCorp Support</td> </tr>
+</table>
+</a>
+</div>
+</body>
+</html>

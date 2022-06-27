@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<title>
+Login page
+</title>
+
+<link rel="stylesheet" href="mystyle.css"/>
+<script src="validation.js">
+</script>
+
+<body>
+<div class="header">
+<h1><a class="head" href="dashboard.html"> TouristCorp</a> </h1>
+</div>
+
+<form name="Form" id="Form" action="login.php" method="post">
+<div class="form">
+<p> Please sign-in using your account </p>
+<label for="email"> Email: </label> <br> 
+<input required type="email" placeholder="Enter your Email" name="email" class="email" id="email"><label class="valid" id="EmailAddress"></label> <br> <br>
+
+<label for="pass"> Password: </label> <br> 
+<input required type="password" placeholder="Enter your password" name="pass" class="pass"><label class="valid" id="Password"></label> <br> <br>
+
+<button type="submit" value="login" name="login"> Login </button>
+
+<p> Don't have an account? <a href="register.html">Click here</a> to register. </p>
+</div>
+</form>
+
+<div class="contact">
+<h3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For more information and support: </h3>
+<table>
+<tr> <td> <img src="images/Whatsapp.png" alt="Whatsapp" height="40" class="center"> </td> <td> +971 50 111 1111 </td> </tr>
+<tr> <td> <img src="images/Twitter.png" alt="Twitter" height="40" class="center"> </td> <td> @TouristCorp </td> </tr>
+<tr> <td> <img src="images/Facebook.png" alt="Facebook" height="40" class="center"> </td> <td> TouristCorp Support</td> </tr>
+</table>
+</div>
+
+</body>
+</html>
